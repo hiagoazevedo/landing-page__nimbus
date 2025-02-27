@@ -4,7 +4,7 @@
 
 Bem-vindo ao repositório da Landing Page da Nimbus, um braço especializado da renomada SoHo Agency. Este projeto foi desenvolvido com o objetivo de criar uma presença online impactante para a Nimbus, destacando nossa expertise em capturar a essência das marcas através de imagens aéreas inovadoras.
 
-![Nimbus Landing Page Preview](https://user-images.githubusercontent.com/seu-usuario/12345678/sua-imagem.jpg)
+![Nimbus Landing Page Preview](https://github.com/user-attachments/assets/66b93080-9a2d-47d1-92d5-488ede5ff31b)
 
 ## Propósito
 
@@ -65,6 +65,7 @@ As informações sobre a licença deste projeto não estão disponíveis no mome
 ## Contato
 
 Para mais informações sobre o desenvolvimento deste site, entre em contato com a equipe de desenvolvimento da Nimbus.
+
 Nimbus - [Instagram](https://instagram.com/nimbus.filmes)
 
 Hiago Azevedo - [GitHub](https://github.com/hiagoazevedo)
