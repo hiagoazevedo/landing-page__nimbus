@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('/styles/header.css');
+@import url('/styles/hero-section.css');
+@import url('/styles/who-are-we.css');
+@import url('/styles/services.css');
+@import url('/styles/jobs.css');
+@import url('/styles/contact.css');
+
+:root {
+  /* Cores */
+  --black: #000000;
+  --gray-50: #F9FAFB;
+  --gray-500: #667085;
+  --gray-900: #101828;
+  --white: #ffffff;
+  --blue: #32669e;
+  --blue-hover: #225183;
+
+  /* Fontes */
+  --font-inter: "Inter", serif;
+  --font-TT: "TT Commons Pro", sans-serif;
+  --font-dm: "DM Sans", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  font-weight: 500;
+}

@@ -1,0 +1,114 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 4.5rem;
+}
+
+.services__title {
+  font-family: var(--font-TT);
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.service__container-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.services__img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.service__subtitle {
+  font-family: var(--font-dm);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.service__description {
+  font-family: var(--font-dm);
+  font-size: 1rem;
+  max-width: 100%;
+  line-height: 1.2;
+}
+
+@media screen and (min-width:768px) {
+  .services {
+    padding: 3rem 2rem;
+  }
+
+  .services__title {
+    font-size: 2.5rem;
+    text-align: start;
+  }
+
+  .services__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto; 
+    grid-template-areas:
+      "img1 img2 img3" 
+      "text1 text2 text3"; 
+    gap: 1.5rem; 
+    width: 100%; 
+  }
+
+  .service__container-item {
+    display: contents; /* Permite tratar os filhos diretamente no grid */
+  }
+  
+  .service__container-item:nth-child(1) .services__img {
+    grid-area: img1;
+  }
+  .service__container-item:nth-child(2) .services__img {
+    grid-area: img2;
+
+  }
+  .service__container-item:nth-child(3) .services__img {
+    grid-area: img3;
+  }
+
+  .service__container-item:nth-child(1) .services__container-text {
+    grid-area: text1;
+  }
+  .service__container-item:nth-child(2) .services__container-text {
+    grid-area: text2;
+  }
+  .service__container-item:nth-child(3) .services__container-text {
+    grid-area: text3;
+  }
+}
+
+@media screen and (min-width:1350px) {
+  .services {
+    padding: 7rem 3rem;
+  }
+  
+  .services__container {
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); 
+    column-gap: 5rem;
+  }
+
+  .services__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service__subtitle {
+    font-size: 1.25rem;
+  }
+
+  .service__description {
+    font-size: 1rem;
+  }
+}
